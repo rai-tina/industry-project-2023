@@ -51,17 +51,17 @@
       flex: 0;
     }
 
-    &--cancel {
-      background-color: $color-instock-white;
-      border: 1px solid $color-instock-cloud;
-      color: $color-instock-black;
-    }
+    // &--cancel {
+    //   background-color: $color-instock-white;
+    //   border: 1px solid $color-instock-cloud;
+    //   color: $color-instock-black;
+    // }
 
-    &--delete {
-      background-color: $color-instock-red;
-      border: 1px solid $color-instock-cloud;
-      color: $color-instock-white;
-    }
+    // &--delete {
+    //   background-color: $color-instock-red;
+    //   border: 1px solid $color-instock-cloud;
+    //   color: $color-instock-white;
+    // }
   }
 
   &__text {
@@ -96,7 +96,7 @@
     }
   }
   &__description {
-    @include p1;
+    // @include p1;
   }
   &__close {
     border: none;

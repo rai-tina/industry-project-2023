@@ -51,17 +51,17 @@
       flex: 0;
     }
 
-    &--cancel {
-      background-color: $color-instock-white;
-      border: 1px solid $color-instock-cloud;
-      color: $color-instock-black;
-    }
+    // &--cancel {
+    //   background-color: $color-instock-white;
+    //   border: 1px solid $color-instock-cloud;
+    //   color: $color-instock-black;
+    // }
 
-    &--delete {
-      background-color: $color-instock-red;
-      border: 1px solid $color-instock-cloud;
-      color: $color-instock-white;
-    }
+    // &--delete {
+    //   background-color: $color-instock-red;
+    //   border: 1px solid $color-instock-cloud;
+    //   color: $color-instock-white;
+    // }
   }
 
   &__text {
@@ -70,6 +70,64 @@
     justify-content: space-between;
     gap: 16px;
     margin-bottom: 1rem;
+
+    .car {
+      width: 3rem;
+      align-self: center;
+    }
+    .travel-method-text {
+      align-self: center;
+      font-weight: 700;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid grey;
+      &__row {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .button {
+        font-size: 1rem;
+        border: none;
+        width: 8rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        &:hover {
+          background-color: darkgrey;
+          color: white;
+        }
+      }
+      .active {
+        background-color: $color-btn-green;
+        color: white;
+      }
+    }
+    .travel-method-stats {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-evenly;
+      &__title {
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+      &__stat {
+        text-align: center;
+      }
+    }
+    .save-button {
+      font-size: 1rem;
+      border: none;
+      width: 8rem;
+      padding: 1rem;
+      border-radius: 1.5rem;
+      align-self: center;
+      color: white;
+      background-color: $color-btn-green;
+    }
 
     @include tablet {
       margin-bottom: 2rem;
@@ -96,7 +154,7 @@
     }
   }
   &__description {
-    @include p1;
+    // @include p1;
   }
   &__close {
     border: none;

@@ -1,30 +1,27 @@
 import "./CongratsModal.scss";
-import closeIcon from "../../assets/Icons/close-24px.svg";
+import trophyImage from "../../assets/images/trophy.svg";
+import { useNavigate } from "react-router-dom";
 
-const CongratsModal = ({ title, children, onClose, source }) => {
+const CongratsModal = () => {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/leaderboard");
+  }
+
   return (
     <div className="modal__overlay">
       <div className="modal__content">
         <div className="modal__upper">
-          <img src={closeIcon} className="modal__close" onClick={onClose} />
-
           <div className="modal__text">
-            <h1>{`Delete ${title} ${
-              source === "warehouse" ? " Warehouse? " : " inventory item?"
-            }`}</h1>
-            <p className="modal__description">
-              Please confirm that you’d like to delete
-              {source === "warehouse" ? " the " : " "}
-              {title} from the
-              {source === "warehouse"
-                ? " list of warehouses"
-                : " inventory list"}
-              . You won’t be able to undo this action.
-            </p>
+            <img className="car" src={trophyImage}></img>
+            <div className="congrats-bottom">
+              <button className="save-button" onClick={handleClick}>
+                Continue
+              </button>
+            </div>
           </div>
         </div>
-
-        <>{children}</>
       </div>
     </div>
   );
