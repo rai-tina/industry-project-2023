@@ -17,7 +17,6 @@ export default function App() {
           <Route path="/dashboard" element={<MainPage />}></Route>
           <Route path="/leaderboard" element={<LeaderboardPage />}></Route>
         </Routes>
-        <Footer/>
       </BrowserRouter>
     </>
   );
