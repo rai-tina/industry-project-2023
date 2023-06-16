@@ -30,7 +30,7 @@ export default function MainPage() {
         <h1 className="main__welcome-text">Welcome back Emily!</h1>
 
         <div className="main__savings">
-          <h2 className="main__savings-title">C02 Saved</h2>
+          <h2 className="main__savings-title">CO2 Saved</h2>
           <div className="main__savings-stats">
             <div className="main__savings-pie">
               <span className="main__savings-percent">84%</span>
