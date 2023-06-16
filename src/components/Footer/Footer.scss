@@ -1,15 +1,19 @@
 .footer {
-    background-color: #629071;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 4px;
-    width: auto;
-    height: 64px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #629071;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  width: auto;
+  height: 64px;
 
-    &__community-icon {
-        width: 100%;
-    }
+  &__community-icon {
+    width: 100%;
+  }
 }
