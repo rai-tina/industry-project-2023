@@ -7,6 +7,8 @@ import "./MainPage.scss";
 import cloud from "../../assets/icons/cloud-svg.svg";
 import emily from "../../assets/images/emily-greenway.svg";
 import logo from "../../assets/icons/logo.svg";
+import lightbulb from "../../assets/icons/lightbulb.svg";
+import bike from "../../assets/icons/bike.svg";
 
 // Import components
 import Footer from "../../components/Footer/Footer";
@@ -62,7 +64,24 @@ export default function MainPage() {
           </div>
         </div>
 
-        
+        <div className="main__dyk">
+          <div className="main__dyk-header">
+            <img
+              src={lightbulb}
+              alt="lightbulb"
+              className="main__dyk-lightbulb"
+            />
+            <h2 className="main__dyk-title">Did you know?</h2>
+          </div>
+
+          <div className="main__dyk-content">
+            <span className="main__dyk-fact">
+              Your latest trip a bicycle would have shortened your time by 15
+              min. and reduced your CO2 emissions by 10kg
+            </span>
+            <img src={bike} alt="bike" className="main__dyk-icon" />
+          </div>
+        </div>
       </main>
       <Footer />
     </>
