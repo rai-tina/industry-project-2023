@@ -7,18 +7,27 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 1rem;
 
   &__menu {
-    width: 5%;
+    width: 25px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   &__user {
     border-radius: 50%;
-    width: 25%;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
   }
 
   &__logo {
-    width: 5%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
   }
 
   &__welcome {
@@ -29,6 +38,28 @@
 
     &-text {
       text-align: center;
+      font-size: 26px;
+      margin-top: 16px;
+    }
+  }
+
+  &__savings {
+    margin-top: 1rem;
+    border: 1px solid #000;
+    border-radius: 4px;
+
+    &-title {
+      font-size: 16px;
+      padding: 8px 0px 16px 16px;
+    }
+
+    &-stats {
+      padding: 0px 16px 16px 16px;
+    }
+
+    &-amount {
+      color: $color-text-green;
+      font-weight: 700;
     }
   }
 }

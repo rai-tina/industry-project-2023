@@ -1,4 +1,11 @@
+// Import Styling
+import "./MainPage.scss";
+
+// Import Images
 import userMohan from "../../assets/images/Mohan-muruge.jpg";
+
+// Import Icons
+import cloud from "../../assets/icons/cloud-svg.svg";
 
 export default function MainPage() {
   return (
@@ -20,8 +27,17 @@ export default function MainPage() {
           <h2 className="main__savings-title">C02 Saved</h2>
           <div className="main__savings-stats">
             <div className="main__savings-pie">84% Compared to last month</div>
-            <div className="main__savings-emission"></div>
-            <div className="main__savings-emission"></div>
+            <div className="main__savings-emission">
+              <img src={cloud} alt="cloud" className="main__savings-icon" />
+              Current emission{" "}
+              <span className="main__savings-amount">24kg</span>
+            </div>
+
+            <div className="main__savings-emission">
+              <img src={cloud} alt="cloud" className="main__savings-icon" />
+              Last months emission{" "}
+              <span className="main__savings-amount">24kg</span>
+            </div>
           </div>
         </div>
       </main>
