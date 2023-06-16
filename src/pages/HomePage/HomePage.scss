@@ -1,0 +1,17 @@
+.home-page {
+    position: relative;
+    top: 0;
+    left: 0;
+&__background {
+    width: 100%;
+    margin-bottom: -4px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+&__notification {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+}
