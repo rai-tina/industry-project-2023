@@ -14,11 +14,18 @@ const CongratsModal = () => {
       <div className="modal__content">
         <div className="modal__upper">
           <div className="modal__text">
-            <img className="car" src={trophyImage}></img>
+            <img className="trophy" src={trophyImage}></img>
             <div className="congrats-bottom">
-              <button className="save-button" onClick={handleClick}>
-                Continue
-              </button>
+              <div className="congrats-bottom__title">Congrats Emily!</div>
+              <div className="congrats-bottom__text">
+                Thank you for logging your trip. Check out your score on the
+                community page!
+              </div>
+              <div className="button-wrapper">
+                <button className="continue-button" onClick={handleClick}>
+                  Continue
+                </button>
+              </div>
             </div>
           </div>
         </div>
