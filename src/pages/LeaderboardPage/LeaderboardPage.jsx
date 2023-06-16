@@ -25,10 +25,10 @@ const LeaderboardPage = () => {
             <div className="leaderboard__heading-container">
                 <img className="leaderboard__logo" src={logo} />
                 <p className="leaderboard__month">June</p>
-                <p className="leaderboard__carbon-emmission">CO2e (Kg)</p>
+                <p className="leaderboard__carbon-emmission">CO2e(Kg)</p>
             </div>
 
-            <p>Have some fun competing with your friends!</p>
+            <p className="leaderboard__caption">Have some fun competing with your friends!</p>
 
             <div className="leaderboard__user-container">
                 <img className="leaderboard__avatar" src= {emily} />
