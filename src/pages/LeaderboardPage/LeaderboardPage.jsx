@@ -37,7 +37,9 @@ const LeaderboardPage = () => {
                             <h2 className="leaderboard__name">Emily Greenway</h2>
                             <p className="leaderboard__user-emmission">24kg</p>
                         </div>
-
+                        <div className="leaderboard__bar">
+                            <div className="leaderboard__progress"></div>
+                        </div>
                     </div>
                 </div>
 

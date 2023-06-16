@@ -6,7 +6,7 @@
 .leaderboard {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    // width: 320px;
     box-sizing: border-box;
 
 
@@ -90,7 +90,11 @@
         width: 100%;
     }
 
-
+    // animation progress bar
+    &__bar {
+        background-color: #efefef;
+        border-radius: 15.043px;
+    }
 
 
     
