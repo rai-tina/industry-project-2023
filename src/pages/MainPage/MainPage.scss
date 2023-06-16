@@ -7,18 +7,29 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 1rem;
+  background-color: $color-bgd-white;
 
   &__menu {
-    width: 5%;
+    width: 25px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   &__user {
     border-radius: 50%;
-    width: 25%;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border: 4px solid $color-user-green;
   }
 
   &__logo {
-    width: 5%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
   }
 
   &__welcome {
@@ -29,6 +40,82 @@
 
     &-text {
       text-align: center;
+      font-size: 26px;
+      margin-top: 16px;
     }
+  }
+
+  &__savings {
+    margin-top: 1rem;
+    border: 1px solid $color-bgd-white;
+    border-radius: 4px;
+    background-color: white;
+
+    &-title {
+      font-size: 16px;
+      padding: 8px 0px 16px 16px;
+    }
+
+    &-stats {
+      padding: 0px 16px 16px 16px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &-pie {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 4px solid $color-user-green;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    &-percent {
+      font-weight: 700;
+      font-size: 22px;
+    }
+
+    &-compared {
+      font-size: 11px;
+    }
+
+    &-emissions {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    &-emission {
+      display: flex;
+    }
+
+    &-icon {
+      padding-right: 4px;
+    }
+
+    &-message {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-text {
+      font-size: 11px;
+    }
+
+    &-amount {
+      color: $color-text-green;
+      font-size: 11px;
+      font-weight: 700;
+    }
+  }
+
+  &__dyk {
+    display: flex;
   }
 }
