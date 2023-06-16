@@ -19,9 +19,9 @@ export default function MainPage() {
       <main className="main">
         <div className="main__welcome-content">
           <div className="main__menu">
-            <hr />
-            <hr />
-            <hr />
+            <hr className="main__menu-hr" />
+            <hr className="main__menu-hr" />
+            <hr className="main__menu-hr" />
           </div>
           <img src={emily} alt="mohan" className="main__user" />
           <img src={logo} alt="logo" className="main__logo" />
@@ -74,12 +74,14 @@ export default function MainPage() {
             <h2 className="main__dyk-title">Did you know?</h2>
           </div>
 
-          <div className="main__dyk-content">
-            <span className="main__dyk-fact">
-              Your latest trip a bicycle would have shortened your time by 15
-              min. and reduced your CO2 emissions by 10kg
-            </span>
-            <img src={bike} alt="bike" className="main__dyk-icon" />
+          <div className="main__dyk-container">
+            <div className="main__dyk-content">
+              <span className="main__dyk-fact">
+                Your latest trip, if on a bicycle would have shortened your time
+                by 15 min. and reduced your CO2 emissions by 10kg.
+              </span>
+              <img src={bike} alt="bike" className="main__dyk-icon" />
+            </div>
           </div>
         </div>
       </main>

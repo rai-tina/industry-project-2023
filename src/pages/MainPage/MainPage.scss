@@ -16,6 +16,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    &-hr {
+      color: $color-nav-green;
+    }
   }
 
   &__user {
@@ -67,7 +71,7 @@
       width: 100px;
       height: 100px;
       border-radius: 50%;
-      border: 4px solid $color-user-green;
+      border: 6px solid $color-user-green;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -117,5 +121,44 @@
 
   &__dyk {
     display: flex;
+    flex-direction: column;
+
+    &-header {
+      display: flex;
+      justify-content: flex-start;
+      padding: 16px 0px 16px 0px;
+    }
+
+    &-lightbulb {
+      width: 20px;
+    }
+
+    &-title {
+      font-size: 16px;
+    }
+
+    &-container {
+      display: flex;
+      width: 100%;
+    }
+
+    &-content {
+      background-color: $color-dyk-pink;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    &-fact {
+      padding: 10px 8px 0px 8px;
+      line-height: 16px;
+    }
+
+    &-icon {
+      width: 13%;
+      align-self: center;
+    }
   }
 }
