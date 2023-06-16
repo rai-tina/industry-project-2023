@@ -4,15 +4,19 @@ import LeaderboardPage from "./pages/LeaderboardPage/LeaderboardPage";
 import "./App.scss";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/dashboard" element={<MainPage />}></Route>
-        <Route path="/leaderboard" element={<LeaderboardPage />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/dashboard" element={<MainPage />}></Route>
+          <Route path="/leaderboard" element={<LeaderboardPage />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
