@@ -1,7 +1,7 @@
 export default function HomePage() {
   return (
     <>
-      <img></img>
+      <img className="home-page__background"></img>
     </>
   );
 }
