@@ -1,3 +1,5 @@
+import userMohan from "../../assets/images/Mohan-muruge.jpg";
+
 export default function MainPage() {
   return (
     <>
@@ -8,8 +10,8 @@ export default function MainPage() {
             <hr />
             <hr />
           </div>
-          <img src="" alt="" className="main__user" />
-          <img src="" alt="" className="main__logo" />
+          <img src={userMohan} alt="mohan" className="main__user" />
+          <img src={userMohan} alt="logo" className="main__logo" />
         </div>
 
         <h1 className="main__welcome-text">Welcome back Emily!</h1>

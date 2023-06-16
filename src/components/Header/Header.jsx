@@ -5,7 +5,7 @@ export default function Header() {
         <span className="header__time">4:20</span>
         <div className="header__phone-details">
           {/* <FontAwesomeIcon icon="fa-solid fa-wifi" /> */}
-          <i class="fa-solid fa-wifi"></i>
+          {/* <i class="fa-solid fa-wifi"></i> */}
         </div>
       </header>
     </>
