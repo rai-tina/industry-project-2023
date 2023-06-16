@@ -37,7 +37,9 @@ const LeaderboardPage = () => {
                             <h2 className="leaderboard__name">Emily Greenway</h2>
                             <p className="leaderboard__user-emmission">24kg</p>
                         </div>
-
+                        <div className="leaderboard__bar">
+                            <div className="leaderboard__emily"></div>
+                        </div>
                     </div>
                 </div>
 
@@ -48,7 +50,9 @@ const LeaderboardPage = () => {
                             <h2 className="leaderboard__name">Jen Rosenbaum</h2>
                             <p className="leaderboard__user-emmission">65kg</p>
                         </div>
-                        <img className="leaderboard__progress-bar" src={jenBar} />
+                        <div className="leaderboard__bar">
+                            <div className="leaderboard__jen"></div>
+                        </div>
                     </div>
                 </div>
 
@@ -59,7 +63,9 @@ const LeaderboardPage = () => {
                             <h2 className="leaderboard__name">Jon Marshall</h2>
                             <p className="leaderboard__user-emmission">80kg</p>
                         </div>
-                        <img className="leaderboard__progress-bar" src={jonBar} />
+                        <div className="leaderboard__bar">
+                            <div className="leaderboard__jon"></div>
+                        </div>
                     </div>
                 </div>
 
@@ -70,7 +76,9 @@ const LeaderboardPage = () => {
                             <h2 className="leaderboard__name">Joan Lanster</h2>
                             <p className="leaderboard__user-emmission">85kg</p>
                         </div>
-                        <img className="leaderboard__progress-bar" src={joanBar} />
+                        <div className="leaderboard__bar">
+                            <div className="leaderboard__joan"></div>
+                        </div>
                     </div>
                 </div>
 
@@ -81,7 +89,9 @@ const LeaderboardPage = () => {
                             <h2 className="leaderboard__name">Jessie Framer</h2>
                             <p className="leaderboard__user-emmission">90kg</p>
                         </div>
-                        <img className="leaderboard__progress-bar" src={jessieBar} />
+                        <div className="leaderboard__bar">
+                            <div className="leaderboard__jessie"></div>
+                        </div>
                     </div>
                 </div>
             </section>

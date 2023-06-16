@@ -6,7 +6,7 @@
 .leaderboard {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    // width: 320px;
     box-sizing: border-box;
 
 
@@ -29,7 +29,9 @@
     }
 
     &__logo {
-        // background-color: 
+        border-radius: 46%;
+        width: 39px;
+        // height: 39px;
     }
 
     &__month {
@@ -90,8 +92,103 @@
         width: 100%;
     }
 
+    // animation progress bar
+    &__bar {
+        background-color: #efefef;
+        border-radius: 15.043px;
+        width: 100%;
+        height: 16px;
+    }
+
+    &__emily {
+        background-color: $color-leader-green;
+        width: 24%;
+        height: 16px;
+        border-radius: 15.043px;
+
+        animation: emily 1s linear forwards;
+    }
+
+    &__jen {
+        background-color: $color-leader-green;
+        width: 65%;
+        height: 16px;
+        border-radius: 15.043px;
+
+        animation: jen 1s linear forwards;
+    }
+
+    &__jon {
+        background-color: $color-leader-green;
+        width: 80%;
+        height: 16px;
+        border-radius: 15.043px;
+
+        animation: jon 1s linear forwards;
+    }
+
+    &__joan {
+        background-color: $color-leader-green;
+        width: 85%;
+        height: 16px;
+        border-radius: 15.043px;
+
+        animation: joan 1s linear forwards;
+    }
+
+    &__jessie {
+        background-color: $color-leader-green;
+        width: 90%;
+        height: 16px;
+        border-radius: 15.043px;
+
+        animation: jessie 1s linear forwards;
+    }
 
 
-
-    
 }
+
+@keyframes emily {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 24%;
+    }
+  }
+
+  @keyframes jen {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 65%;
+    }
+  }
+
+  @keyframes jon {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+
+  @keyframes joan {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 85%;
+    }
+  }
+
+  @keyframes jessie {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 90%;
+    }
+  }
