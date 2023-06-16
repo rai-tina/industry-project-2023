@@ -6,7 +6,9 @@
 .leaderboard {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 320px;
+    box-sizing: border-box;
+
 
     &__title {
         display: flex;
@@ -50,10 +52,42 @@
         display: flex;
         flex-direction: row;
         padding: 24px 16px;
+        
     }
 
     &__avatar {
         height: 48px;
+        padding-right: 16px;
+    }
+
+    &__details-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__user-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+
+    &__name {
+        width: 50%;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    &__user-emmission {
+        display: flex;
+        width: 50%;
+        font-size: 14px;
+        justify-content: flex-end;
+    }
+
+    &__progress-bar {
+        width: 100%;
     }
 
 
