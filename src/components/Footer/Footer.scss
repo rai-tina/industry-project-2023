@@ -1,4 +1,11 @@
 .footer {
     background-color: #629071;
     cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: auto;
+    height: 64px;
 }
